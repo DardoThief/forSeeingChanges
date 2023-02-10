@@ -2345,6 +2345,13 @@ textarea.form-control-lg {
   margin-left: 0;
 }
 
+@media (max-width: 376px) {
+  .form-check-input {
+    order: 2;
+    width: 18px;
+  }
+}
+
 .form-check-inline {
   display: inline-block;
   margin-right: 1rem;
