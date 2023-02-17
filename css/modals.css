@@ -1,0 +1,159 @@
+.show {
+    /* удалить */
+    display: block !important;
+}
+
+.form-input {
+    width: 100%;
+}
+
+.modal {
+    --bs-modal-width: 550px !important;
+    position: initial !important;
+    /* удалить */
+}
+
+.modal-body {
+    padding: 48px 48px 24px !important;
+}
+
+.btn-close {
+    position: absolute;
+    right: 28px;
+    top: 28px;
+}
+
+.name-modal {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-label {
+    position: relative;
+    left: 24px;
+    top: 45px;
+    color: rgba(14, 14, 14, 0.4);
+    font-size: 16px;
+    transition: .3s;
+}
+
+.error-hint {
+    color: #FF2A2A;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    left: 24px;
+    position: relative;
+}
+
+input[type="password"] {
+    font-weight: 600;
+}
+
+.focus {
+    /* стиль для анимации инпутов */
+    font-size: 12px;
+    top: 16px;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.form-control {
+    border-radius: 40px !important;
+    height: 52px;
+    padding: 15px 25px !important;
+}
+
+.text-modal {
+    color: #15181C;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 24px 0;
+}
+
+.btn-modal {
+    font-size: 16px !important;
+    color: white;
+    font-weight: 500 !important;
+    letter-spacing: -0.02em;
+    line-height: 20px !important;
+    width: 100%;
+    padding: 16px 0 !important;
+    border-radius: 40px !important;
+}
+
+.help-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: rgba(14, 14, 14, 0.4);
+}
+
+.step {
+    color: #FF6A2A;
+    font-size: 16px;
+}
+
+.step-from {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+
+.text-with-icon {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.info-icon {
+    border-radius: 50%;
+    background: #F9F9F9 !important;
+    height: 16px;
+    width: 16px;
+    font-size: 30px;
+    color: #15181C;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+}
+
+.grey-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: rgba(14, 14, 14, 0.4);
+    margin-bottom: 32px;
+}
+
+.small-btn-modal {
+    padding: 16px 69px !important;
+    border-radius: 40px !important;
+    margin-top: 24px;
+}
+
+.modal-block {
+    width: 400px;
+    margin-top: 32px;
+}
+
+.modal-block-bottom {
+    margin-bottom: 42px;
+}

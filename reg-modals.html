@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Modals</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.green.min.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/bootstrap-slider.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <div class="modal show">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <h1 class="name-modal" id="modalTitleId">Вход</h1>
+                    <div class="form-input">
+                        <label class="form-label">Введите логин</label>
+                        <input type="text" id="login" name="login" class="form-control" placeholder="" required>
+                        <span class="error-hint" id="wrongLogin">Ошибочка вышла</span>
+                    </div>
+                    <div class="form-input">
+                        <label class="form-label">Введите пароль</label>
+                        <input type="password" id="enterPassword" name="enterPassword" class="form-control"
+                            placeholder="" required>
+                        <span class="error-hint" id="wrongPassword">Ошибочка вышла</span>
+                    </div>
+                    <div class="text-modal">Забыли пароль?</div>
+                    <button class="btn-modal btn btn-warning">Войти</button>
+                    <div class="text-modal">Зарегистрироваться</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal show">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <h1 class="name-modal" id="modalTitleId">Забыли пароль?</h1>
+                    <div class="help-text">Введите электронную почту, которую вы указали при регистрации, на неё будет
+                        выслана ссылка для восстановления пароля</div>
+                    <div class="form-input" style="margin-bottom: 24px;">
+                        <label class="form-label">Электронная почта</label>
+                        <input type="text" id="email" name="email" class="form-control" placeholder="" required>
+                    </div>
+                    <button class="btn-modal btn btn-warning">Отправить</button>
+                    <div class="text-modal">Зарегистрироваться</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal show">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <h1 class="name-modal" id="modalTitleId">Забыли пароль?</h1>
+                    <div class="help-text">На вашу электронную почту отправлена ссылка для восстановления пароля</div>
+                    <div class="form-input" style="margin-bottom: 24px;">
+                        <label class="form-label">Электронная почта</label>
+                        <input type="text" id="email" name="email" class="form-control" placeholder="" required>
+                    </div>
+                    <button class="btn-modal btn btn-warning" disabled>Отправить</button>
+                    <div class="text-modal">Повторная отправка через 30 секунд</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal show">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <h1 class="name-modal" id="modalTitleId">Регистрация</h1>
+                    <span class="step">Шаг 1 <span class="step-from">из 2</span></span>
+                    <div class="form-input">
+                        <label class="form-label">ФИО</label>
+                        <input type="text" id="FIO" name="FIO" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="form-input">
+                        <label class="form-label">Номер телефона</label>
+                        <input type="phone" id="phoneNumber" name="phone" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="form-input" style="margin-bottom: 24px;">
+                        <label class="form-label">Электронная почта</label>
+                        <input type="text" id="email" name="email" class="form-control" placeholder="" required>
+                    </div>
+                    <button class="btn-modal btn btn-warning">Далее</button>
+                    <div class="help-text" style="margin-top: 16px;">Нажимая на кнопку вы соглашаетесь с
+                        Пользовательским соглашением и Условиями обработки персональных данных</div>
+                    <div class="text-modal text-with-icon">Продолжить без регистрации
+                        <span class="info-icon" id="info-icon">
+                            <span>?</span>
+                        </span>
+                    </div>
+                    <div class="grey-text" id="haveAcc">У вас есть аккаунт? <span class="text-modal"> Войти</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal show">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <h1 class="name-modal" id="modalTitleId">Регистрация</h1>
+                    <span class="step">Шаг 2 <span class="step-from">из 2</span></span>
+                    <div class="form-input">
+                        <label class="form-label">Название организации</label>
+                        <input type="text" id="organization" name="organization" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="form-input">
+                        <label class="form-label">ИНН организации</label>
+                        <input type="phone" id="INN" name="INN" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="form-input" style="margin-bottom: 24px;">
+                        <label class="form-label">Ваша должность</label>
+                        <input type="text" id="position" name="position" class="form-control" placeholder="" required>
+                    </div>
+                    <button class="btn-modal btn btn-warning">Далее</button>
+                    <div class="help-text" style="margin-top: 16px;">Нажимая на кнопку вы соглашаетесь с
+                        Пользовательским соглашением и Условиями обработки персональных данных</div>
+                    <div class="text-modal text-with-icon">Продолжить без регистрации
+                        <span class="info-icon" id="info-icon">
+                            <span>?</span>
+                        </span>
+                    </div>
+                    <div class="grey-text" id="haveAcc">У вас есть аккаунт? <span class="text-modal"> Войти</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal show">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img src="img/cart-modal-2.svg" alt="">
+                    <div class="modal-block">
+                        <h5 class="name-modal" id="modalTitleId">Хотите пропустить этап регистрации</h5>
+                        <div class="grey-text mt-3 mb-3">У вас не будет доступа к оформлению заказов, корзине и
+                            сохранению товара в избранное</div>
+                    </div>
+                    <button class="btn btn-warning small-btn-modal">Вернуться</button>
+                    <div class="text-modal" style="margin-bottom: 8px; margin-top: 16px;">Пропустить</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal show">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img src="img/alert.svg" alt="">
+                    <div class="modal-block modal-block-bottom">
+                        <h5 class="name-modal" id="modalTitleId">Регистрация прошла успешно</h5>
+                        <div class="grey-text mt-3 mb-3">На указанный e-mail выслан ваш пароль. Для активации вашей учётной записи, пожалуйста, пройдите по ссылке в письме.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/modal.js"></script>
+</body>
+
+</html>
