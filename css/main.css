@@ -1835,24 +1835,37 @@ input[type="checkbox"]:checked {
     font-weight: 500;
     font-size: 14px;
 }
-.block-product-filter .img-block{
+
+.block-product-filter .img-block {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.block-product-filter .img-block img{
+
+.block-product-filter .img-block img {
     object-fit: contain;
+}
+
+.search-with-popup {
+    width: 100%;
 }
 
 .popup-search {
     z-index: 10000;
     position: absolute;
-    width: calc(100% - 24px);
+    width: 100%;
     height: fit-content;
     background-color: white;
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
     padding: 24px;
+}
+
+@media(max-width: 1024px) {
+    .popup-search {
+        position: absolute;
+        width: calc(100% - 24px);
+    }
 }
 
 .label-search {
@@ -1869,15 +1882,25 @@ input[type="checkbox"]:checked {
 .category-results-block {
     padding: 10px 0px;
     display: flex;
-    width: max-content;
     align-items: center;
+    overflow: scroll;
+}
+
+.only-category-results-block {
+    display: flex;
 }
 
 .category-results {
     margin-right: 24px;
+    width: max-content;
 }
 
-.title-category, .title-product {
+.category-results:last-child {
+    margin-right: 55px;
+}
+
+.title-category,
+.title-product {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -1946,6 +1969,7 @@ input[type="checkbox"]:checked {
     align-items: center;
     justify-content: center;
     border: none;
-    padding: 0!important;
+    padding: 0 !important;
     font: inherit;
+    box-shadow: -24px 0px 10px white;
 }
