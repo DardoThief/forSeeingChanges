@@ -54,6 +54,7 @@
     line-height: 16px;
     left: 24px;
     position: relative;
+    display: none;
 }
 
 input[type="password"] {

@@ -24,14 +24,17 @@
                 <div class="modal-body">
                     <h1 class="name-modal" id="modalTitleId">Вход</h1>
                     <div class="form-input">
-                        <label class="form-label">Введите логин</label>
-                        <input type="text" id="login" name="login" class="form-control" placeholder="" required>
+                        <div class="input">
+                            <label class="form-label">Введите логин</label>
+                            <input type="text" id="login" name="login" class="form-control" placeholder="" required>
+                        </div>
                         <span class="error-hint" id="wrongLogin">Ошибочка вышла</span>
                     </div>
                     <div class="form-input">
-                        <label class="form-label">Введите пароль</label>
-                        <input type="password" id="enterPassword" name="enterPassword" class="form-control"
-                            placeholder="" required>
+                        <div class="input">
+                            <label class="form-label">Введите пароль</label>
+                            <input type="password" id="enterPassword" name="enterPassword" class="form-control" placeholder="" required>
+                        </div>
                         <span class="error-hint" id="wrongPassword">Ошибочка вышла</span>
                     </div>
                     <div class="text-modal">Забыли пароль?</div>
@@ -41,7 +44,7 @@
             </div>
         </div>
     </div>
-    <div class="modal show">
+    <div class="modal show" id="modal-forgot-pw">
         <div class="modal-dialog modal-dialog-centered modal-md" role="document">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -52,14 +55,15 @@
                     <div class="form-input" style="margin-bottom: 24px;">
                         <label class="form-label">Электронная почта</label>
                         <input type="text" id="email" name="email" class="form-control" placeholder="" required>
+                        <span class="error-hint" id="wrongLogin">Ошибочка вышла</span>
                     </div>
-                    <button class="btn-modal btn btn-warning">Отправить</button>
+                    <button id="send-btn" class="btn-modal btn btn-warning">Отправить</button>
                     <div class="text-modal">Зарегистрироваться</div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal show">
+    <div class="modal show" id="modal-forgot-pw">
         <div class="modal-dialog modal-dialog-centered modal-md" role="document">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -67,7 +71,7 @@
                     <h1 class="name-modal" id="modalTitleId">Забыли пароль?</h1>
                     <div class="help-text">На вашу электронную почту отправлена ссылка для восстановления пароля</div>
                     <div class="form-input" style="margin-bottom: 24px;">
-                        <label class="form-label">Электронная почта</label>
+                        <label class="form-label" id="email-label">Электронная почта</label>
                         <input type="text" id="email" name="email" class="form-control" placeholder="" required>
                     </div>
                     <button class="btn-modal btn btn-warning" disabled>Отправить</button>
@@ -117,7 +121,8 @@
                     <span class="step">Шаг 2 <span class="step-from">из 2</span></span>
                     <div class="form-input">
                         <label class="form-label">Название организации</label>
-                        <input type="text" id="organization" name="organization" class="form-control" placeholder="" required>
+                        <input type="text" id="organization" name="organization" class="form-control" placeholder=""
+                            required>
                     </div>
                     <div class="form-input">
                         <label class="form-label">ИНН организации</label>
@@ -165,13 +170,15 @@
                     <img src="img/alert.svg" alt="">
                     <div class="modal-block modal-block-bottom">
                         <h5 class="name-modal" id="modalTitleId">Регистрация прошла успешно</h5>
-                        <div class="grey-text mt-3 mb-3">На указанный e-mail выслан ваш пароль. Для активации вашей учётной записи, пожалуйста, пройдите по ссылке в письме.</div>
+                        <div class="grey-text mt-3 mb-3">На указанный e-mail выслан ваш пароль. Для активации вашей
+                            учётной записи, пожалуйста, пройдите по ссылке в письме.</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="js/modal.js"></script>
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

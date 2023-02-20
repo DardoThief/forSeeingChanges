@@ -204,4 +204,9 @@ $(document).ready(function () {
         $('.step-2').hide()
         $('.step-3').show()
     })
+    $('.search-hint').mouseenter(function () {
+        $('.modal-search-hint').css('display', 'block')
+    }).mouseleave(function () {
+        $('.modal-search-hint').css('display', 'none')
+    })
 })
